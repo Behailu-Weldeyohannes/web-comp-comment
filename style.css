@@ -1,0 +1,72 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+.comment-card {
+  display: flex;
+  margin: 12px;
+  padding: 22px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px #ccc;
+  max-width: 400px;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Nunito;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 60px;
+  margin-right: 2rem;
+}
+
+.avatar > img {
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+}
+
+.details .info {
+  display: none;
+}
+
+.details .actions button {
+  border: none;
+  padding: 8px 22px;
+  border-radius: 8px;
+  background-color: #00bcd4;
+  color: #fff;
+  border-radius: 6px;
+  color: white;
+}
+
+.details .actions button:first-of-type {
+  margin-right: 12px;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
